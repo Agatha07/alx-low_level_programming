@@ -1,14 +1,11 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-
 /**
  * main - Print alphabets in lowercase
  *
  * Return: 0
  */
 
-int man(void)
+int main(void)
 {
 	char lowercase;
 
