@@ -6,11 +6,9 @@
 * Return: 0
 */
 
-int print_last_digit(int num, digit)
+int print_last_digit(int digit)
 {
-	digit = num % 10;
-
-	printf("Last Digit of %d is: %d", num, digit);
-
-	return (0);
+	_putchar((digit % 10) + '0');
+	
+	return (digit % 10);
 }
