@@ -4,23 +4,24 @@
 * Return: 0
 */
 
-int main() {
+int main(void)
+{
+	int count = 0;
+	long int a = 0, b = 1, sum;
 
-  int i;
-  int n = 50;
+	while (count < 50)
+	{
+		sum = a + b;
+		a = b;
+		b = sum;
+		printf("%lu", sum);
 
-  int t1 = 1, t2 = 2;
-
-  int nextTerm = t1 + t2;
-
-   printf("%d, %d, ", t1, t2);
-
-   for (i = 1; i <= 50; ++i) {
-    printf("%d, ", nextTerm);
-    t1 = t2;
-    t2 = nextTerm;
-    nextTerm = t1 + t2;
-  }
-
-  return 0;
+		if (count < 49)
+		{
+			printf(", ");
+		}
+		count++;
+	}
+	putchar('\n');
+	return (0);
 }
