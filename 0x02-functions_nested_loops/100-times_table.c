@@ -8,12 +8,12 @@ void print_times_table(int n)
 {
 	int i, j;
 
-	for (i = 0; i < num + 1; i++)
+	for (i = 0; i < n + 1; i++)
 	{
-	for (j = 0; j < num + 1; j++)
+	for (j = 0; j < n + 1; j++)
 	{
-		_putchar("%d", i * j);
-		if (j < num)
+		_putchar("%c", i * j);
+		if (j < n)
 		{
 			_putchar(", ");
 		}
