@@ -3,7 +3,7 @@
 * main - Fibonacci sequence
 * description: A program that finds and prints the sum of the even-valued terms
 *
-* Result: 0
+* Return: 0
 */
 
 int main(void)
