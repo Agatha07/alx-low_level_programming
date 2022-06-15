@@ -4,21 +4,41 @@
 * print_times_table - prints n times table starting with 0
 * @n: number of the times table
 */
+
 void print_times_table(int n)
 {
-	int i, j;
+	int num, mult, prod;
 
-	for (i = 0; i < n + 1; i++)
+	if (n >= 0 && n <= 15)
 	{
-	for (j = 0; j < n + 1; j++)
-	{
-		_putchar("i * j");
-		if (j < n)
+		for (num = 0; num <= n; num++)
 		{
-			_putchar(", ");
+			_putchar('0');
+
+			for (mult = 1; mult <= n; mult++)
+			{
+				_putchar(',');
+				_putchar(' ');
+
+				prod = num * mult;
+
+				if (prod <= 99)
+					_putchar(' ');
+				if (prod <= 9)
+					_putchar(' ');
+
+				if (prod >= 100)
+				{
+					_putchar((prod / 100) + '0');
+					_putchar(((prod / 10)) % 10 + '0');
+				}
+				else if (prod <= 99 && prod >= 10)
+				{
+					_putchar((prod / 10) + '0');
+				}
+				_putchar((prod % 10) + '0');
+			}
+			_putchar('\n');
 		}
 	}
-	_putchar("\n");
-	}
-	return (0);
 }
