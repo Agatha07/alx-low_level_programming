@@ -5,13 +5,16 @@
  */
 void print_line(int n)
 {
-	int length;
+	char c;
 	
 	if (n > 0)
 	{
-		for (length = 0; length < n; length++)
-			_putchar ('_');
+		_putchar('\n');
 	}
-	_putchar ('\n')
+		for (c = 0; c < n; c++)
+		{
+			_putchar ('_');
+		}
+	_putchar ('\n');
 
 }
