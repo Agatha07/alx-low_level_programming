@@ -4,3 +4,4 @@ char *_strchr(char *s, char c);
 int _putchar(char c);
 void print_chessboard(char (*a)[8]);
 void print_diagsums(int *a, int size);
+unsigned int _strspn(char *s, char *accept);
