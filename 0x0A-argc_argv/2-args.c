@@ -12,6 +12,6 @@ int main(int argc, char *argv[])
 	int count;
 
 	for (count = 0; count < argc; count++)
-		ptintf("%s\n", argv[c]);
+		printf("%s\n", argv[c]);
 	return (0);
 }
