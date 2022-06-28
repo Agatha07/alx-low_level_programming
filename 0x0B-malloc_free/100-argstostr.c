@@ -33,8 +33,10 @@ char *argstostr(int ac, char **av)
 	{
 		for (byte = 0; av[arg][byte]; byte++)
 			str[index++] = av[arg][byte];
+		index++;
 
 		str[index++] = '\n';
+		index++;
 	}
 
 	str[len] = '\0';
